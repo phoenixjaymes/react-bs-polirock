@@ -1,0 +1,44 @@
+{
+  "inputs": [
+    {
+      "id": "1",
+      "label": "Democrat",
+      "value": "democrat"
+    },
+    {
+      "id": "2",
+      "label": "Republican",
+      "value": "republican"
+    },
+    {
+      "id": "3",
+      "label": "Independent",
+      "value": "independent"
+    },
+    {
+      "id": "4",
+      "label": "Commenting about Palin",
+      "value": "other"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "user": "Will",
+      "comment": "Some text comment",
+      "path": "/"
+    },
+    {
+      "id": "2",
+      "user": "Steve",
+      "comment": "Some string comment",
+      "path": "/"
+    },
+    {
+      "id": "3",
+      "user": "Dave",
+      "comment": "Comment text goes here",
+      "path": "/"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "data": {
+      "id": "1",
+      "rank": "1",
+      "img": "band-image1.png",
+      "name": "Bruce Springsteen",
+      "song": "Born in the U.S.A.",
+      "votes": "160600",
+      "party": "Wearing old Jeans",
+      "path": "/",
+      "details": {
+        "snapshot": "Springsteen started his career with heartland rock; straightforward melodies with lyrics about blue collar life.",
+        "members": "The Boss",
+        "albums": "Born in the U.S.A., Devils and Dust, American Skin",
+        "genre": "Rock",
+        "city": "Long Beach",
+        "state": "NJ",
+        "country": "USA",
+        "label": "Columbia",
+        "class": "Major",
+        "web": "brucespringsteen.net",
+        "myspace": "brucespringsteen"
+      }
+    }
+}

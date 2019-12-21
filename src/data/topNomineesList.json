@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "label": "Legend",
+      "name": "The Beatles",
+      "path": "/legend"
+    },
+    {
+      "id": "2",
+      "label": "Major Label",
+      "name": "Bruce Sprinsteen",
+      "path": "/major-label"
+    },
+    {
+      "id": "3",
+      "label": "Indie Band",
+      "name": "Blac Flag",
+      "path": "/indie"
+    },
+    {
+      "id": "4",
+      "label": "Unsigned",
+      "name": "T Minus One",
+      "path": "/unsigned"
+    },
+    {
+      "id": "5",
+      "label": "Democrat",
+      "name": "Sex Pistols",
+      "path": "/"
+    },
+    {
+      "id": "6",
+      "label": "Republican",
+      "name": "Stevie Wonder",
+      "path": "/"
+    },
+    {
+      "id": "7",
+      "label": "Independent",
+      "name": "Anti-Flag",
+      "path": "/"
+    }
+  ]
+}
