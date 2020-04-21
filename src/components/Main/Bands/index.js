@@ -23,11 +23,11 @@ class Bands extends Component {
     console.log(labelClass, party);
     let path;
     if (labelClass !== undefined) {
-      path = `http://phoenixjaymes.com/data/polirock/get-bands.php?lc=${labelClass}`;
+      path = `https://phoenixjaymes.com/data/polirock/get-bands.php?lc=${labelClass}`;
     } else if (party !== undefined) {
-      path = `http://phoenixjaymes.com/data/polirock/get-bands.php?party=${party}`;
+      path = `https://phoenixjaymes.com/data/polirock/get-bands.php?party=${party}`;
     } else {
-      path = 'http://phoenixjaymes.com/data/polirock/get-bands.php?lc=1';
+      path = 'https://phoenixjaymes.com/data/polirock/get-bands.php?lc=1';
     }
 
     fetch(path)

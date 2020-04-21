@@ -16,7 +16,7 @@ const BandsItem = ({ band, isIncludedBandDetails }) => {
         </div>
 
         <div className="band__img">
-          <img src={`http://phoenixjaymes.com/projects/polirock/bandfiles/${band.img}`} alt="Band" />
+          <img src={`https://phoenixjaymes.com/projects/polirock/bandfiles/${band.img}`} alt="Band" />
         </div>
 
         <ul className="band__data pl-2 pl-sm-3">
@@ -37,7 +37,7 @@ const BandsItem = ({ band, isIncludedBandDetails }) => {
             {band.party}
           </li>
 
-          { isIncludedBandDetails && (
+          {isIncludedBandDetails && (
             <li to="#">
               <span className="link-look" onClick={handleClick}>{isInfoVisible ? 'Less Info' : 'More Info'}</span>
             </li>
@@ -45,7 +45,7 @@ const BandsItem = ({ band, isIncludedBandDetails }) => {
         </ul>
       </div>
 
-      { isIncludedBandDetails && (
+      {isIncludedBandDetails && (
         <div className={isInfoVisible ? 'band-info-visible' : 'band-info-hidden'}>
           <BandDetails name={band.name} bid={band.id} details={band.details} />
         </div>

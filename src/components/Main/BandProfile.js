@@ -18,7 +18,7 @@ class BandProfile extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://phoenixjaymes.com/data/polirock/get-band-profile.php?bid=${this.props.match.params.bid}`)
+    fetch(`https://phoenixjaymes.com/data/polirock/get-band-profile.php?bid=${this.props.match.params.bid}`)
       .then( reponse => reponse.json() )
       .then( responseData => {
         

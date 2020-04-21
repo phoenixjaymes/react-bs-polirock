@@ -20,7 +20,7 @@ class Legends extends Component {
 
   componentDidMount() {
     const { labelClass } = this.props;
-    fetch(`http://phoenixjaymes.com/data/polirock/get-bands.php?lc=${labelClass}`)
+    fetch(`https://phoenixjaymes.com/data/polirock/get-bands.php?lc=${labelClass}`)
       .then(reponse => reponse.json())
       .then((responseData) => {
         this.setState({

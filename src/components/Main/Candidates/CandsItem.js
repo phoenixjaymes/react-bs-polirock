@@ -16,7 +16,7 @@ const CandsItem = ({ cand, isIncludedCandDetails }) => {
         </div>
 
         <div className="band__img">
-          <img src={`http://phoenixjaymes.com/projects/polirock/images/candidates/${cand.img}`} alt="Candidate" />
+          <img src={`https://phoenixjaymes.com/projects/polirock/images/candidates/${cand.img}`} alt="Candidate" />
         </div>
 
         <ul className="band__data pl-2 pl-sm-3">
@@ -37,7 +37,7 @@ const CandsItem = ({ cand, isIncludedCandDetails }) => {
             {cand.party}
           </li>
 
-          { isIncludedCandDetails && (
+          {isIncludedCandDetails && (
             <li to="#">
               <span className="link-look" onClick={handleClick}>{isInfoVisible ? 'Less Info' : 'More Info'}</span>
             </li>
@@ -45,7 +45,7 @@ const CandsItem = ({ cand, isIncludedCandDetails }) => {
         </ul>
       </div>
 
-      { isIncludedCandDetails && (
+      {isIncludedCandDetails && (
         <div className={isInfoVisible ? 'band-info-visible' : 'band-info-hidden'}>
           <CandDetails name={cand.name} cid={cand.id} details={cand.details} />
         </div>

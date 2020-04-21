@@ -19,7 +19,7 @@ class Candidates extends Component {
   }
 
   componentDidMount() {
-    const path = 'http://phoenixjaymes.com/data/polirock/get-candidates.php';
+    const path = 'https://phoenixjaymes.com/data/polirock/get-candidates.php';
     fetch(path)
       .then(reponse => reponse.json())
       .then((responseData) => {

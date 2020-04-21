@@ -21,21 +21,21 @@ class BandsAlpha extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://phoenixjaymes.com/data/polirock/get-bandsaz.php`)
-      .then( reponse => reponse.json() )
-      .then( responseData => {
-        
+    fetch(`https://phoenixjaymes.com/data/polirock/get-bandsaz.php`)
+      .then(reponse => reponse.json())
+      .then(responseData => {
+
         this.setState({
           bandsData: responseData.data,
           loading: false
-       });
+        });
 
       })
       .catch(error => {
-        this.setState({ 
+        this.setState({
           error: true,
           loading: false
-       });
+        });
         console.log('Error fetching and parsing data', error);
       });
   }
@@ -45,9 +45,9 @@ class BandsAlpha extends Component {
   renderError = () => <LoadingError />;
 
   renderBands = () => {
-    const major = this.state.bandsData.major.map( band => <BandsAlphaItem key={band.id} bid={band.id} name={band.name} /> );
-    const indie = this.state.bandsData.indie.map( band => <BandsAlphaItem key={band.id} bid={band.id} name={band.name} /> );
-    const unsigned = this.state.bandsData.unsigned.map( band => <BandsAlphaItem key={band.id} bid={band.id} name={band.name} /> );
+    const major = this.state.bandsData.major.map(band => <BandsAlphaItem key={band.id} bid={band.id} name={band.name} />);
+    const indie = this.state.bandsData.indie.map(band => <BandsAlphaItem key={band.id} bid={band.id} name={band.name} />);
+    const unsigned = this.state.bandsData.unsigned.map(band => <BandsAlphaItem key={band.id} bid={band.id} name={band.name} />);
 
     return (
       <Container as="main">
@@ -75,8 +75,8 @@ class BandsAlpha extends Component {
           <Col>
             <BottomAds />
           </Col>
-          </Row>
-      </Container>      
+        </Row>
+      </Container>
     );
   }
 

@@ -25,21 +25,21 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch('http://phoenixjaymes.com/data/polirock/get-home.php')
-      .then( reponse => reponse.json() )
-      .then( responseData => {
-        
+    fetch('https://phoenixjaymes.com/data/polirock/get-home.php')
+      .then(reponse => reponse.json())
+      .then(responseData => {
+
         this.setState({
           homeData: responseData.data,
           loading: false
-       });
+        });
 
       })
       .catch(error => {
-        this.setState({ 
+        this.setState({
           error: true,
           loading: false
-       });
+        });
         console.log('Error fetching and parsing data', error);
       });
   }
@@ -56,22 +56,22 @@ class Home extends Component {
           <Col md={6} lg={5}>
             <ContestCountdown daysUntil={this.state.homeData.daysUntil} />
             <TopNominees topNominees={this.state.homeData.topNominees} />
-            <Poll 
-              heading="PoliRock Voters Are:" 
-              otherInput={this.state.homeData.voterPollOtherInput} 
-              comments={this.state.homeData.voterPollComments} 
+            <Poll
+              heading="PoliRock Voters Are:"
+              otherInput={this.state.homeData.voterPollOtherInput}
+              comments={this.state.homeData.voterPollComments}
             />
           </Col>
           <Col md={6} lg={5}>
             <PoliBlog />
-            <EnterToWin data={this.state.homeData.contestText}  />
-            <WinFreeStuff data={this.state.homeData.winContestText}  />
+            <EnterToWin data={this.state.homeData.contestText} />
+            <WinFreeStuff data={this.state.homeData.winContestText} />
           </Col>
           <Col lg={2} className="d-none d-lg-block" >
             <SideAds />
           </Col>
         </Row>
-        
+
         <BottomAds />
       </Container>
     );
