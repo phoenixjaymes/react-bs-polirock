@@ -1,19 +1,19 @@
 {
   "name": "r-bs-polirock",
   "version": "0.1.0",
-  "homepage": "http://phoenixjaymes.com/lab/r-bs-polirock/",
+  "homepage": "https://phoenixjaymes.com/lab/r-bs-polirock/",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.16.0",
+    "bootstrap": "^4.4.1",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.19.0",
     "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-bootstrap": "^1.0.0-beta.14",
-    "react-dom": "^16.11.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "2.1.5"
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
